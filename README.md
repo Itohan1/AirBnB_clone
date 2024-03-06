@@ -26,5 +26,5 @@ Here are some examples of commands you can use in the command interpreter:
 
 ## Authors
 
-- Gift Aghaulor(aghaulor.gift@gmail.com)
-- Itohan Momodu (momoduitohan5@gmail.com)
+- [Gift Aghaulor](aghaulor.gift@gmail.com)
+- [Itohan Momodu](momoduitohan5@gmail.com)
