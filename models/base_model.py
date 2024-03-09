@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Write a class BaseModel that defines all common attributes/methods for other classes"""
+"""Write a class BaseModel"""
 
 from models.__init__ import storage
-import datetime
+from datetime import datetime
 import uuid
 
 
@@ -17,26 +17,27 @@ class BaseModel:
                 if key == '__class__':
                     continue
                 elif key == 'created_at' or key == 'updated_at':
-                    if isinstance(value, datetime.datetime):
+                    if isinstance(value, datetime):
                         value = value.isoformat()
-                    setattr(self, key, datetime.datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f'))
+                        v = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
+                    setattr(self, key, v)
                 else:
                     setattr(self, key, value)
         else:
             self.id = str(uuid.uuid4())
-            self.created_at = datetime.datetime.now()
-            self.updated_at = datetime.datetime.now()
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
             storage.new(self.to_dict())
 
     def __str__(self):
         """"""
 
-        return ("[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__))
+        return (f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}")
 
     def save(self):
         """"""
 
-        self.updated_at = datetime.datetime.now()
+        self.updated_at = datetime.now()
         storage.new(self.to_dict())
         storage.save()
 
