@@ -10,7 +10,7 @@ class BaseModel:
     """Public instance attributes id created_at, updated_at"""
 
     def __init__(self, *args, **kwargs):
-        """"""
+        """initializes the instance attributes"""
 
         if kwargs:
             for key, value in kwargs.items():
@@ -30,19 +30,19 @@ class BaseModel:
             storage.new(self.to_dict())
 
     def __str__(self):
-        """"""
+        """returns a string representation of the object"""
 
         return (f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}")
 
     def save(self):
-        """"""
+        """saves the updated value of datetime"""
 
         self.updated_at = datetime.now()
         storage.new(self.to_dict())
         storage.save()
 
     def to_dict(self):
-        """"""
+        """creates dictionary representation of objects"""
 
         instance_dict_ = self.__dict__.copy()
         instance_dict_['__class__'] = self.__class__.__name__

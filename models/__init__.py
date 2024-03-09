@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""""""
+"""stores stores the initial value"""
 
 
 from models.engine.file_storage import FileStorage
