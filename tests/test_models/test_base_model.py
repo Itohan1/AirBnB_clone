@@ -41,6 +41,7 @@ class TestBaseModel(unittest.TestCase):
         self.model.save()
         self.assertNotEqual(self.model.updated_at, old_updated_at)
 
+    
     def test_to_dict(self):
         """ Test the conversion to dictionary object"""
 
@@ -50,6 +51,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn('updated_at', instance_dict)
         self.assertIn('id', instance_dict) 
 
+    
     def test_storage(self):
         """  Test the storage of the BaseModel"""
 
