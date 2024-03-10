@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-"""Defines the storage engine with the class FileStorage that stores all valuesDefines the storage engine with the class FileStorage that stores all values
+"""Defines the storage engine with the class FileStorage that stores all\
+        valuesDefines the storage engine with the class\
+        FileStorage that stores all values
 """
-
 import json
 import os
 
 
 class FileStorage:
     """
-    serializes instances to a JSON file and deserializes JSON file to instances.
+    serializes instances to a JSON file and\
+        deserializes JSON file to instances.
     """
 
     __file_path = "file.json"
@@ -22,8 +24,7 @@ class FileStorage:
         return FileStorage.__objects
 
     def new(self, obj):
-        """Sets in __objects the obj with key <obj class name>.id.Sets in __objects the obj\
-            With key <obj class name>.id."""
+        """Sets in __objects the obj With key <obj class name>.id."""
 
         key = f"{obj.__class__.__name__}.{obj.id}"
         FileStorage.__objects[key] = obj.to_dict()
