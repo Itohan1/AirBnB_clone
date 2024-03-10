@@ -2,10 +2,9 @@
 """Write a class BaseModel"""
 
 
+import uuid
 from models.__init__ import storage
 from datetime import datetime
-import uuid
-from models import storage
 
 
 class BaseModel:
@@ -15,7 +14,6 @@ class BaseModel:
         """initializes the instance attributes"""
 
         if kwargs:
-
             for key, value in kwargs.items():
                 if key == '__class__':
                     continue
