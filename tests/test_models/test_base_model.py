@@ -28,6 +28,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(self.model.created_at, datetime)
         self.assertIsInstance(self.model.updated_at, datetime)
 
+    
     def test_str(self):
         """Test string representation of BaseModel."""
         
