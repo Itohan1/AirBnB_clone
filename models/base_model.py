@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Write a class BaseModel"""
 
+
 from models.__init__ import storage
 from datetime import datetime
 import uuid
@@ -49,4 +50,4 @@ class BaseModel:
         instance_dict_['created_at'] = self.created_at.isoformat()
         instance_dict_['updated_at'] = self.updated_at.isoformat()
 
-        return (instance_dict_)
+        return instance_dict_
