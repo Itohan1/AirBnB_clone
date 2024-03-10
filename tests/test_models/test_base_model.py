@@ -30,6 +30,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_str(self):
         """Test string representation of BaseModel."""
+        
         base_model = BaseModel()
         expected = f"[BaseModel] ({self.model.id}) {self.model.__dict__}"
         self.assertEqual(str(self.model), expected)
