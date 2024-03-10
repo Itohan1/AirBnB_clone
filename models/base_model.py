@@ -22,7 +22,7 @@ class BaseModel:
                         value = value.isoformat()
                         v = datetime.strptime(
                                 value, '%Y-%m-%dT%H:%M:%S.%f')
-                        setattr(self, key, v)
+                    setattr(self, key, v)
                 else:
                     setattr(self, key, value)
         else:
