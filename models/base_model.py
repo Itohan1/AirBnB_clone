@@ -14,6 +14,7 @@ class BaseModel:
         """initializes the instance attributes"""
 
         if kwargs:
+
             for key, value in kwargs.items():
                 if key == '__class__':
                     continue
