@@ -10,9 +10,10 @@ import json
 import uuid
 from models import storage
 
+
 class HBNBCommand(cmd.Cmd):
     """
-    Represent a class HBNBCommand that uses the command 
+    Represent a class HBNBCommand that uses the command
     interpreter
     """
 
@@ -36,33 +37,30 @@ class HBNBCommand(cmd.Cmd):
     def do_help(self, arg):
         """
         Display help information for the command interpreter.
-        """ 
+        """
         cmd.Cmd.do_help(self, arg)
-            
+
     def emptyline(self):
         """
         Called when the user enters an empty line.
         """
         pass
 
-    
     def onecmd(self, obj):
         """
         Execute a single command entered by the user.
         """
-        
+
         if not obj.strip():
             return self.emptyline()
         return super().onecmd(obj)
 
-    
     def help_quit(self):
         """
         Display help information for the quit command
         """
         print("Quit command to exit the program\n")
 
-    
     def help_EOF(self):
         """
         Display help information for the EOF command.
@@ -95,7 +93,7 @@ class HBNBCommand(cmd.Cmd):
         new_instance = model_cls()
         new_id = str(uuid.uuid4())
         setattr(new_instance, "id", new_id)
-        
+
         self.save(new_instance)
         print(new_id)
 
@@ -112,10 +110,11 @@ class HBNBCommand(cmd.Cmd):
 
         instance_dict = arg.to_dict()
 
-        data[arg.__class__.__name__ + "." + instance_dict["id"]] = instance_dict
+        data[f'{arg.__class__.__name__}.{instance_dict["id"]}'] = instance_dict
 
         with open(HBNBCommand.filepath, 'w') as file:
             json.dump(data, file)
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
