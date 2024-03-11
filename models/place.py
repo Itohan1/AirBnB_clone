@@ -6,7 +6,7 @@ from models.base_model import BaseModel
 
 class Place(BaseModel):
     """Place class that inherits from BaseModel"""
-    
+
     def __init__(self, *args, **kwargs):
         """Initialize Place instance"""
 
