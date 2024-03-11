@@ -22,7 +22,7 @@ class BaseModel:
                         value = value.isoformat()
                         self.__dict__[key] = datetime.strptime(
                                 value, '%Y-%m-%dT%H:%M:%S.%f')
-                    
+
                 else:
                     self.__dict__[key] = value
         else:
@@ -40,7 +40,7 @@ class BaseModel:
         """saves the updated value of datetime"""
 
         self.updated_at = datetime.now()
-        #storage.new(self.to_dict())
+        # storage.new(self.to_dict())
         storage.save()
 
     def to_dict(self):
