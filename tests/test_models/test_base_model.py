@@ -15,7 +15,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_attributes(self):
         """ Test BaseModel attrributes"""
-        
+
         base_model = BaseModel()
         self.assertTrue(hasattr(base_model, 'id'))
         self.assertIsInstance(base_model.id, str)
@@ -27,7 +27,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_init(self):
         """ Test initialization of BaseModel"""
-        
+
         base_model = BaseModel()
         self.assertIsNotNone(base_model.id)
         self.assertIsInstance(base_model.created_at, datetime)
