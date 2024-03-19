@@ -1,8 +1,9 @@
-.body {
+body {
 	margin: 0;
 	padding: 0;
 	background-color: #484848;
 	font-size: 14px;
+	background-image: url("icon.png");
 	font-family: "Circular","Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-image: url('https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon.png')
 }
