@@ -1,15 +1,45 @@
-.places h1{
+.places h1 {
 	display: flex;
 	flex-wrap: wrap;
-	font size: 30px;
+	font-size: 30px;
 }
 
-.article h2{
+.First {
 	width: 390px;
 	padding: 20px;
 	margin: 20px;
-	border: #FF5A5F 1px;
+	border: 1px solid #FF5A5F;
 	border-radius: 4px;
-	font size: 30px;
-	text-align: horizontal;
+	margin: -10px auto 0 30px;
+}
+
+.Anoda {
+	width: 390px;
+	padding: 20px;
+	border: 1px solid #FF5A5F;
+	border-radius: 4px;
+	margin: -125px auto 0 500px;
+}
+
+article h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.Anodacontainer {
+	width: 80%;
+	max-width: 1800px;
+	margin: -10px auto -70px 150px;
+	height: 300px;
+}
+
+.Last {
+	width: 390px;
+	padding: 20px;
+	border: 1px solid #FF5A5F;
+	border-radius: 4px;
+	margin: auto;
+	display: flex;
+	align-items: normal;
+	justify-content: center;
 }

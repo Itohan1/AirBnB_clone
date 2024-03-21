@@ -1,16 +1,14 @@
-.body {
+body {
 	margin: 0;
 	padding: 0;
-	background-color: #484848;
 	font-size: 14px;
+	color: #484848;
 	font-family: "Circular","Helvetica Neue",Helvetica,Arial,sans-serif;
-	background-image: url('https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon.png')
+	background-repeat: no-repeat;
 }
 
 .container {
+	width: 80%;
 	max-width: 1000px;
-	margin-top: 100px;
-	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 30px auto;
 }
