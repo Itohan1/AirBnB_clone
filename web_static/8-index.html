@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="4-common.css">
-		<link rel="stylesheet" type="text/css" href="3-header.css">
-		<link rel="stylesheet" type="text/css" href="6-filters.css">
-		<link rel="stylesheet" type="text/css" href="3-footer.css">
-		<link rel="stylesheet" type="text/css" href="8-places.css">
-		<link rel="icon" href="images/https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/icon.png">
+		<link rel="stylesheet" type="text/css" href="styles/4-common.css">
+		<link rel="stylesheet" type="text/css" href="styles/3-header.css">
+		<link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+		<link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+		<link rel="stylesheet" type="text/css" href="styles/8-places.css">
+		<link rel="icon"  href="image/icon.png">
 	</head>
 	<body>
 		<header>
@@ -14,68 +14,148 @@
 		</header>
 		<div class="container">
 			<section class="filters">
-			<section class="places">
-				<h1>Places</h1>
-			</section>
-				<article>
-					<h2>Place name</h2>
-					<div class="price_by_night"></div>
-					<div class="information">
-						<div class="max_guest"></div>
-						<h4>Fake content</h4>
-						<div class="number_rooms"></div>
-						<h4>Fake content</h4>
-						<div class="number_bathrooms"></div>
-						<h4>Fake content</h4>
-					</div>
-					<div class="user">Owner: <strong>fake text</strong>
-					</div>
-					<div class="description"></div>
-				</article>
-				<button class="search-button"><button>
+				<button class="search-button">Search</button>
 				<div class="locations">
+					<h3>States</h3>
+					<h4>California, Arizona...</h4>
 					<ul class="popover">
 						<li>
-							<h2>State name1</h2>
+							<h2>Arizona:</h2>
 							<ul>
-								<li>city1</li>
-								<li>city2</li>
+								<li>Page</li>
+								<li>Page2</li>
 							</ul>
 						</li>
 						<li>
-							<h2>state name2</h2>
+							<h2>California</h2>
 							<ul>
-								<li>city1</li>
-								<li>city2</li>
+								<li>San Francisco</li>
+								<li>Los Altos</li>
 							</ul>
 						</li>
 					</ul>
-					<h3>States</h3>
-					<h4>Fake States</h4>
 				</div>
 				<div class="amenities">
 					<h3>Amenities</h3>
-					<h4>Fake Amenities</h4>
+					<h4>Internet, Kitchen...</h4>
+					<ul class="popover">
+						<li>Internet</li>
+						<li>Tv</li>
+						<li>Kitchen</li>
+						<li>Iron</li>
+					</ul>
 				</div>
 			</section>
-			<section class="information">
-				<div class="max_guest"></div>
-				<h4>Fake content</h4>
-				<div class="number_rooms"></div>
-				<h4>Fake content</h4>
-				<div class="number_bathrooms"></div>
-				<h4>Fake content</h4>
-			</section>
-			<section class="User">
-				<div class="user"></div>
-				<span class="Owner"></span>
-			</section>
-			<section class="description">
-				<div class="description"></div>
-			</section>
 		</div>
+		<div class="Anodacontainer">
+			<section class="places">
+				<h1>Places</h1>
+					<article class="First">
+						<h2>My home</h2>
+						<div class="price_by_night">$23</div>
+						<div class="information">
+							<figure>
+								<div class="customfig">
+									<div class="max_guest"></div>
+								</div>
+								<figcaption><h4>guests</h4></figcaption>
+							</figure>
+							<div class="left">
+								<figure>
+									<div class="customfig">
+										<div class="number_rooms"></div>
+									</div>
+									<figcaption><h4>bedroom</h4></figcaption>
+								</figure>
+							</div>
+							<div class="left">
+								<figure>
+									<div class="customfig">
+										<div class="number_bathrooms"></div>
+									</div>
+									<figcaption><h4>bath_room</h4></figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="user">Owner: <span class="normaltext">Johny drill</span>
+						</div>
+						<div class="description">
+							<h6>This is a luxurious 2 bedroom hotel suite<h6>
+						</div>
+					</article>
+					<article class="Anoda">
+						<h2>Tiny house</h2>
+						<div class="price_by_night">$56</div>
+						<div class="information">
+							<figure>
+								<div class="customfig">
+									<div class="max_guest"></div>
+								</div>
+								<figcaption><h4>guests</h4></figcaption>
+							</figure>
+							<div class="left">
+								<figure>
+									<div class="customfig">
+										<div class="number_rooms"></div>
+									</div>
+									<figcaption><h4>bedroom</h4></figcaption>
+								</figure>
+							</div>
+							<div class="left">
+								<figure>
+									<div class="customfig">
+										<div class="number_bathrooms"></div>
+									</div>
+									<figcaption><h4>bath_room</h4></figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="user">Owner: <span class="normaltext">Helona drill</span>
+						</div>
+						<div class="description">
+							<h6>This is a luxurious 2 bedroom hotel suite<h6>
+						</div>
+					</article>
+			</section>		
+		</div>
+		<article class="Last">
+				<h2>A suite</h2>
+				<div class="price_by_night">
+					<span>$34</span>
+				</div>
+			<div class="information">
+				<figure>
+					<div class="customfig">
+						<div class="max_guest"></div>
+					</div>
+					<figcaption><h4>guests</h4></figcaption>
+				</figure>
+				<div class="left">
+					<figure>
+						<div class="customfig">
+							<div class="number_rooms"></div>
+						</div>
+						<figcaption><h4>bedroom</h4></figcaption>
+					</figure>
+				</div>
+				<div class="left">
+					<figure>
+						<div class="customfig">
+							<div class="number_bathrooms"></div>
+						</div>
+						<figcaption><h4>bath_room</h4></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="user">Owner: <span class="normaltext">Johny drill</span>
+			</div>
+			<div class="description">
+				<h6>This is a fine dining and entertainment suite</h6>
+			</div>
+		</article>
 		<footer>
 			<p>Best School</p>
 		</footer>
 	</body>
 </html>
+
